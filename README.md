@@ -40,16 +40,16 @@ powershell -c "irm bun.sh/install.ps1 | iex"
 
 ### Step 2: Install the Plugin
 
-Open Claude Code and run these commands:
+Clone this repository (or copy CLAUDE.md to your project):
 
 ```bash
-# Add this marketplace
-/plugin marketplace add riazmohamed/claude-canvas-plugin
+git clone https://github.com/riazmohamed/claude-canvas-plugin.git
+cd claude-canvas-plugin
+```
 
-# Install the canvas plugin
-/plugin install canvas
+Then open Claude Code in this directory and run one-time setup:
 
-# Run one-time setup (downloads canvas toolkit)
+```
 /canvas:setup
 ```
 
@@ -181,9 +181,9 @@ Use `←`/`→` to navigate weeks, `t` to jump to today.
 
 ### "Command not found" error
 
-1. Verify plugin is installed: `/plugin`
-2. Reinstall: `/plugin install canvas`
-3. Restart Claude Code
+1. Ensure you're in a directory with the CLAUDE.md file (or copy it to `~/.claude/CLAUDE.md` for global access)
+2. Restart Claude Code
+3. Verify CLAUDE.md contains the skill definitions
 
 ### "bun: command not found"
 
@@ -211,11 +211,8 @@ cd ~/tools/claude-canvas && git pull && bun install && cd canvas && bun install
 ## Uninstalling
 
 ```bash
-# Remove the plugin
-/plugin uninstall canvas
-
-# Remove the marketplace
-/plugin marketplace remove riazmohamed/claude-canvas-plugin
+# Remove the CLAUDE.md file (or delete the canvas skill definitions from it)
+rm CLAUDE.md
 
 # Optionally remove the canvas toolkit
 rm -rf ~/tools/claude-canvas
