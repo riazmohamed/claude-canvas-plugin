@@ -1,0 +1,18 @@
+{
+  "name": "canvas",
+  "version": "1.0.0",
+  "description": "Claude Canvas TUI commands - spawn interactive terminal interfaces",
+  "author": "riaz.mohamed",
+  "license": "MIT",
+  "keywords": ["canvas", "tui", "terminal", "productivity"],
+  "commands": [
+    "commands/calendar.md",
+    "commands/weather.md",
+    "commands/tracker.md",
+    "commands/system.md",
+    "commands/document.md",
+    "commands/meeting.md",
+    "commands/flight.md",
+    "commands/setup.md"
+  ]
+}

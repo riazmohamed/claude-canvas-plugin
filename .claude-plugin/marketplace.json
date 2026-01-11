@@ -1,0 +1,14 @@
+{
+  "name": "Claude Canvas Plugin Marketplace",
+  "description": "TUI toolkit for Claude Code - spawn interactive terminal interfaces",
+  "plugins": [
+    {
+      "name": "canvas",
+      "description": "Claude Canvas TUI commands for calendars, weather, flights, and more",
+      "version": "1.0.0",
+      "source": "plugins/canvas",
+      "category": "productivity",
+      "tags": ["tui", "terminal", "canvas", "calendar", "weather"]
+    }
+  ]
+}
