@@ -25,7 +25,7 @@ powershell -c "irm bun.sh/install.ps1 | iex"
 
 1. Add this marketplace in Claude Code:
    ```
-   /plugin marketplace add YOUR_USERNAME/claude-canvas-plugin
+   /plugin marketplace add riazmohamed/claude-canvas-plugin
    ```
 
 2. Install the canvas plugin:
